@@ -9,8 +9,28 @@ Random User Generator
     <link href="/css/user/create.css" type='text/css' rel='stylesheet'>
     <link href="//cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css" type='text/css' rel='stylesheet'>
 @stop
+@section('navbar')
 
-@section('form')
+<ul class="nav navbar-nav">
+  <li class="active"><a href="#"> Random User Generator <span class="sr-only">(current)</span></a></li>
+  <li><a href="#">Lorem Ipsum Generator</a></li>
+  <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Other CSCI E-15 Projects
+      <span class="caret"></span></a>
+    <ul class="dropdown-menu" role="menu">
+      <li><a href="#">P1</a></li>
+      <li class="divider"></li>
+      <li><a href="#">P2</a></li>
+      <li class="divider"></li>
+      <li><a href="#">P4</a></li>
+    </ul>
+  </li>
+</ul>
+
+@stop
+@section('content')
+<div class="container">
+  <div class="col-lg-4">
 <form method="POST" action="/user">
         <input type='hidden' value='{{ csrf_token() }}' name='_token'>
         <fieldset>
@@ -27,9 +47,9 @@ Random User Generator
         <br>
         <button type="submit" class="btn btn-primary">Generate List</button>
   </form>
-@stop
-@section('results')
-<table id="example" class="display table-bordered" cellspacing="0" width="50%">
+</div>
+  <div class="col-lg-6">
+<table id="example" class="display table-bordered" cellspacing="0">
   <thead>
             <tr>
                 <th>Name</th>
@@ -61,6 +81,8 @@ Random User Generator
    @endif
  </tbody>
  </table>
+ </div>
+ </div>
 
 @stop
 

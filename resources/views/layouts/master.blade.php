@@ -26,32 +26,41 @@
     <header>
 
 
+
     </header>
-    <nav>
-     <ul>
-         <li> </li>
-         <li> </li>
-     </ul>
-   </nav>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">P3</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          @yield('navbar')
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <section>
 
-        {{-- form to generate users --}}
+      @yield('content')
 
-        @yield('form')
-    </section>
-    <section>
-
-        {{-- section to show results --}}
-
-        @yield('results')
     </section>
 
     <footer>
-        &copy; {{ date('Y') }}
+        &copy; {{ date('Y') }} Ryan Kucinski
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     {{-- Yield any page specific JS files or anything else you might want at the end of the body --}}
     @yield('body')
