@@ -23,11 +23,7 @@
 
 <body>
 
-    <header>
 
-
-
-    </header>
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">

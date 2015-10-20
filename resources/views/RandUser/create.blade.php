@@ -35,8 +35,9 @@ Random User Generator
         <input type='hidden' value='{{ csrf_token() }}' name='_token'>
         <fieldset>
           <legend>Random User Generator</legend>
-          <label for='numuser' class='control-label'>Enter Number of Users:</label>
           <div class="form-group">
+          <label for='numuser' class='control-label'>Enter Number of Users:</label>
+
           <input type="number" id='numuser' class='form-control' name='numuser' min='0' max='100' value=
           @if(!isset($data['numuser']))
           '0'
@@ -45,7 +46,7 @@ Random User Generator
           @endif
         </div>
         <br>
-        <button type="submit" class="btn btn-primary">Generate List</button>
+        <button type="submit" class="btn btn-primary">Generate Users</button>
 
         </fieldset>
       </form>
