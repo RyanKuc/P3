@@ -15,7 +15,7 @@
 
     <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css' rel='stylesheet'>
 
-    <link href='https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/lumen/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/flatly/bootstrap.min.css' rel='stylesheet'>
 
 @yield('head')
 
@@ -37,13 +37,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">P3</a>
+          <a class="navbar-brand" href="/">P3</a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           @yield('navbar')
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Link</a></li>
+            <li><a href="/">Home</a></li>
           </ul>
         </div>
       </div>
@@ -56,6 +56,8 @@
     </section>
 
     <footer>
+      <br>
+      <br>
         &copy; {{ date('Y') }} Ryan Kucinski
     </footer>
 
