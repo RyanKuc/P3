@@ -18,14 +18,22 @@ class RandUserController extends Controller {
       $fakerdata = array();
       for ($i = 0; $i < $numuser; $i++)
 {
-    $fakerdata[] = array($i => $faker->name);
+    $fakerdata[] = array($i =>
+    array('name' => $faker->name,
+    'address' =>$faker->address,
+    'city' =>$faker->city,
+    'state' =>$faker->state,
+    'postcode' =>$faker->postcode
+
+  )
+);
 }
       $data =array(
         'numuser' => $numuser,
         'faker' => $fakerdata
     );
-  /* return $data['faker'];*/
-       return view('RandUser.create')->with('data', $data);
+/*  return $data['faker']; */
+        return view('RandUser.create')->with('data', $data);
 
   }
 
