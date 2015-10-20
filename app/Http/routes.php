@@ -22,10 +22,10 @@ Route::get('/practice', function () {
 });
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::get('/user', 'RandUserController@getUser');
 
 Route::post('/user', 'RandUserController@postUser');
+
+Route::get('/lorem', 'LoremController@getLorem');
+
+Route::post('/lorem', 'LoremController@postLorem');
