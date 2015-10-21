@@ -4,10 +4,6 @@
   Lorem Ipsum Generator
   @stop
 
-  @section('head')
-  <link href="/css/lorem/create.css" type='text/css' rel='stylesheet'>
-  @stop
-
   @section('navbar')
 
   <ul class="nav navbar-nav">

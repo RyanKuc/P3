@@ -6,7 +6,6 @@
 
 
   @section('head')
-  <link href="/css/user/create.css" type='text/css' rel='stylesheet'>
   <link href="//cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css" type='text/css' rel='stylesheet'>
   @stop
   @section('navbar')

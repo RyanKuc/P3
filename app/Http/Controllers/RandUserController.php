@@ -1,4 +1,4 @@
-  <?php
+<?php
 
   namespace P3\Http\Controllers;
 
