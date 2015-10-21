@@ -1,1 +1,0 @@
-PLACEHOLDER FOR CSCI E-15 Project 3.
