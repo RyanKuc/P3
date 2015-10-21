@@ -26,7 +26,7 @@
   {
       $fakerdata[] = array($i =>
       array('name' => $faker->name,
-      'address' =>$faker->address,
+      'address' =>$faker->streetAddress,
       'city' =>$faker->city,
       'state' =>$faker->state,
       'postcode' =>$faker->postcode
