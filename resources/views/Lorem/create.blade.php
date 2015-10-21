@@ -54,14 +54,16 @@
               >
 
 
+
               <label for='sentences' class='control-label'>Enter Number of Sentences/Paragraph: (max:20)</label>
 
               <input type="number" id='sentences' class='form-control' name="sentences" min='1' max='20' value=
               @if(!isset($data['sentences']))
               '4'
               @else
-              {{ $data['sentences'] }}>
+              {{ $data['sentences'] }}
               @endif
+              >
               </div>
 
             <br>

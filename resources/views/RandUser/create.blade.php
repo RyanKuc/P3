@@ -42,6 +42,7 @@
 
 
       <div class="col-sm-4">
+
         <form method="POST" action="/user" class="form-horizontal">
           <input type='hidden' value='{{ csrf_token() }}' name='_token'>
           <fieldset>
@@ -63,7 +64,10 @@
         </form>
       </div>
       <div class='col-sm-7 col-sm-offset-1'>
-        <table id="userlist" class="display table-bordered" cellspacing="0">
+        @if(!isset($data['users']))
+        <p class="text-success">Try Me! - Just specify a number of users and hit 'Generate Users'<p>
+          @endif
+        <table id="userlist" class="display table-bordered">
           <thead>
             <tr>
               <th>Name</th>
@@ -77,7 +81,7 @@
 
 
             @if(!isset($data['users']))
-            <p class="text-success">Try Me! - Just specify a number of users and hit 'Generate Users'<p>
+
             @else
 
             @foreach($data['faker'] as $k => $v)
