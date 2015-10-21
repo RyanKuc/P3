@@ -1,24 +1,17 @@
 <?php
-
   namespace P3\Http\Controllers;
-
   use Faker\Factory as Faker;
   use P3\Http\Controllers\Controller;
   use Illuminate\Http\Request;
-
   class RandUserController extends Controller {
-
       public function getUser() {
         return view('RandUser.create');
       }
-
       public function postUser(Request $request) {
         // Validate the request data
       $this->validate($request, [
-          'users' => 'required|integer|min:1',
+          'users' => 'required|integer|min:1|max:99',
       ]);
-
-
         $users=$request->input('users');
         $faker = Faker::create();
         $fakerdata = array();
@@ -30,7 +23,6 @@
       'city' =>$faker->city,
       'state' =>$faker->state,
       'postcode' =>$faker->postcode
-
     )
   );
   }
@@ -40,7 +32,5 @@
       );
   /*  return $data['faker']; */
           return view('RandUser.create')->with('data', $data);
-
     }
-
   }

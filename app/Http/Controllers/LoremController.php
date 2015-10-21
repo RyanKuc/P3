@@ -15,8 +15,8 @@
       public function postLorem(Request $request) {
         // Validate the request data
       $this->validate($request, [
-          'paragraphs' => 'required|integer|min:1',
-          'sentences' => 'required|integer|min:1'
+          'paragraphs' => 'required|integer|min:1|max:99',
+          'sentences' => 'required|integer|min:1|max:20'
       ]);
 
         $paragraphs=$request->input('paragraphs');
