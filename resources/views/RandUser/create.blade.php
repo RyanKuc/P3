@@ -53,8 +53,8 @@
             @if(!isset($data['users']))
             '0'
             @else
-            {{ $data['users'] }}>
-            @endif
+            {{ $data['users'] }}
+            @endif>
           </div>
           <br>
           <button type="submit" class="btn btn-primary">Generate Users</button>

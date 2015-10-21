@@ -49,8 +49,9 @@
               @if(!isset($data['paragraphs']))
               '0'
               @else
-              {{ $data['paragraphs'] }}>
+              {{ $data['paragraphs'] }}
               @endif
+              >
 
 
               <label for='sentences' class='control-label'>Enter Number of Sentences/Paragraph: (max:20)</label>

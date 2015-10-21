@@ -28,7 +28,7 @@
   @stop
   @section('content')
   <div class="container-fluid">
-  <h1>Developer's Best Friend<h1>
+  <h1>Developer's Best Friend</h1>
 
     <div class="jumbotron">
       <h2 class="text-success">Lorem Ipsum Generator</h2>
