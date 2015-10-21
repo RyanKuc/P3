@@ -86,5 +86,5 @@
         @endforeach
         @endif
       </div>
-
+      </div>
       @stop
