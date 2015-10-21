@@ -12,14 +12,17 @@
     <li class="dropdown">
       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Other CSCI E-15 Projects
         <span class="caret"></span></a>
-        <ul class="dropdown-menu" role="menu">
-          <li><a href="#">P1</a></li>
-          <li class="divider"></li>
-          <li><a href="#">P2</a></li>
-          <li class="divider"></li>
-          <li><a href="#">P4</a></li>
-        </ul>
-      </li>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="http://P1.ryankucinski.com">P1</a></li>
+        <li><a href="https://github.com/RyanKuc/P1.git">Github</a></li>
+        <li class="divider"></li>
+        <li><a href="http://P2.ryankucinski.com">P2</a></li>
+        <li><a href="https://github.com/RyanKuc/P2.git">Github</a></li>
+        <li class="divider"></li>
+        <li><a href="http://P4.ryankucinski.com">P4</a></li>
+        <li><a href="https://github.com/RyanKuc/P4.git">Github</a></li>
+      </ul>
+    </li>
     </ul>
 
     @stop
@@ -40,9 +43,9 @@
           <fieldset>
             <legend>Lorem Ipsum Generator</legend>
             <div class="form-group">
-              <label for='paragraphs' class='control-label'>Enter Number of Paragraphs:</label>
+              <label for='paragraphs' class='control-label'>Enter Number of Paragraphs: (max:99)</label>
 
-              <input type="number" maxlength='2' id='paragraphs' class='form-control' name="paragraphs" min='1' max='99' value=
+              <input type="number" id='paragraphs' class='form-control' name="paragraphs" min='1' max='99' value=
               @if(!isset($data['paragraphs']))
               '0'
               @else
@@ -50,18 +53,19 @@
               @endif
 
 
-              <label for='sentences' class='control-label'>Enter Number of Sentences/Paragraph:</label>
+              <label for='sentences' class='control-label'>Enter Number of Sentences/Paragraph: (max:20)</label>
 
-              <input type="number" maxlength='2' id='sentences' class='form-control' name="sentences" min='1' max='20' value=
+              <input type="number" id='sentences' class='form-control' name="sentences" min='1' max='20' value=
               @if(!isset($data['sentences']))
               '4'
               @else
               {{ $data['sentences'] }}>
               @endif
+              </div>
 
-            </div>
             <br>
               <button type="submit" class="btn btn-primary">Generate Text</button>
+
           </fieldset>
         </form>
       </div>

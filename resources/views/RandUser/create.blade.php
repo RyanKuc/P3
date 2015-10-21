@@ -16,14 +16,17 @@
     <li class="dropdown">
       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Other CSCI E-15 Projects
         <span class="caret"></span></a>
-        <ul class="dropdown-menu" role="menu">
-          <li><a href="#">P1</a></li>
-          <li class="divider"></li>
-          <li><a href="#">P2</a></li>
-          <li class="divider"></li>
-          <li><a href="#">P4</a></li>
-        </ul>
-      </li>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="http://P1.ryankucinski.com">P1</a></li>
+        <li><a href="https://github.com/RyanKuc/P1.git">Github</a></li>
+        <li class="divider"></li>
+        <li><a href="http://P2.ryankucinski.com">P2</a></li>
+        <li><a href="https://github.com/RyanKuc/P2.git">Github</a></li>
+        <li class="divider"></li>
+        <li><a href="http://P4.ryankucinski.com">P4</a></li>
+        <li><a href="https://github.com/RyanKuc/P4.git">Github</a></li>
+      </ul>
+    </li>
     </ul>
 
     @stop
@@ -44,9 +47,9 @@
           <fieldset>
             <legend>Random User Generator</legend>
             <div class="form-group">
-            <label for='users' class='control-label'>Enter Number of Users:</label>
+            <label for='users' class='control-label'>Enter Number of Users: (max:99)</label>
 
-            <input type="number" id='users' class='form-control' name='users' min='1' max='100' value=
+            <input type="number" id='users' class='form-control' name='users' min='1' max='99' value=
             @if(!isset($data['users']))
             '0'
             @else
